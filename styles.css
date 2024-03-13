@@ -1,0 +1,178 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #5c2d91;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar input {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #7743ac;
+}
+
+
+
+
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    background-size: cover;
+    flex-direction: row;
+    height: 100vh; /* 填满剩余空间 */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.8);
+    overflow-y: auto;
+}
+
+.header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 1px 1px 0px #000;
+    max-height: 15vh;
+}
+
+/* task类 */
+.task-list {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+}
+
+#task-list {
+    flex-grow: 0;
+    flex-basis: 90%;
+    max-height: 100%;
+    overflow-y: auto; /* 如果任务列表很长，允许滚动 */
+}
+
+#new-task-form {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center; /* 确保表单内的元素垂直居中 */
+    justify-content: flex-start;
+    flex: 2;
+    padding: 10px;
+}
+
+/*#new-task-input {*/
+/*    flex-grow: 20; !* 使任务名称输入框占据更多空间 *!*/
+/*    margin-right: 20px;*/
+/*    height: 40px;*/
+/*}*/
+
+/*#task-due-date {*/
+/*    flex-grow: 4; !* 日期选择器相对较短 *!*/
+/*    height: 40px;*/
+/*}*/
+
+/*提交按钮*/
+#task-input {
+    display: flex;
+    align-items: center;
+    flex-grow: 3;
+
+}
+
+#new-task-input {
+    flex-grow: 10;
+    margin-right: 10px;
+    height: 40px;
+}
+
+#task-input button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #5c2d91;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-input button:hover {
+    background-color: #7743ac;
+}
+
+#task-input-rest {
+    display: flex;
+    flex-grow: 1;
+    /*padding-left: 30px;*/
+    /*height: 40px;*/
+    align-items: center;
+}
+
+#task-input-rest input {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.task-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-task-btn {
+    background-color: #e81123;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.delete-task-btn:hover {
+    background-color: #f1707a;
+}
+

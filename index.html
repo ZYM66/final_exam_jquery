@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do 应用</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <ul class="menu">
+                <li>我的一天</li>
+                <li>重要</li>
+                <li>已计划日程</li>
+                <li>任务</li>
+            </ul>
+        </div>
+    </aside>
+    <main class="content">
+        <div class="main-container">
+            <header class="header">
+                <h1>我的一天</h1>
+                <span id="now-day-time"></span>
+            </header>
+
+            <div class="task-list">
+                <ul id="task-list"></ul>
+                <form id="new-task-form">
+                    <div id="task-input">
+                        <input type="text" id="new-task-input" placeholder="添加新任务"/>
+                        <button type="submit">添加</button>
+                    </div>
+                    <div id="task-input-rest">
+                        <input type="date" id="task-due-date" placeholder="截止日期"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
